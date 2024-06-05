@@ -16,7 +16,7 @@ const EditBook = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`https://book-store-mern-stack-y.vercel.app/books/${id}`)
+    axios.get(`https://book-store-mern-stack-y.vercel.app/${id}`)
     .then((response) => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear)
@@ -92,4 +92,4 @@ const EditBook = () => {
   )
 }
 
-export default EditBook
+export default EditBook;
